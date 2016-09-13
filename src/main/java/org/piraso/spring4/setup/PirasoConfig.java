@@ -20,7 +20,7 @@ public class PirasoConfig {
         FilterRegistrationBean bean = new FilterRegistrationBean();
         bean.setUrlPatterns(Collections.singleton("/*"));
         bean.setFilter(new PirasoFilter());
-        bean.setOrder(Integer.MAX_VALUE);
+        bean.setOrder(-1);
 
         return bean;
     }
